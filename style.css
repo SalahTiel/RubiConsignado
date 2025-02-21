@@ -11,7 +11,7 @@
     --white: #F1F1F1;
     --gray: #606060;
 }
-body{
+body, html{
     background-color: var(--white);
     overflow-x: hidden;
 }
@@ -285,6 +285,7 @@ section.comments div.carousel{
 section.comments div.carousel div.carousel-content{
     display: flex;
     width: max-content;
+    max-width: 100%;
     gap: 10vw;
     overflow-x: hidden;
     margin-top: 5vh;
