@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root{
+    --red: #E63C3D;
+    --red2: #af2626;
+    --white: #F1F1F1;
+    --gray: #606060;
+}
+body{
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+
+header{
+    position: absolute;   
+    top: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10vw;
+    z-index: 1;
+}
+header img.logo{
+    height: 2rem;
+    width: auto;
+}
+header a{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--red);
+}
+    header a:hover{
+        box-shadow: 0px 0px 10px var(--red);
+        background-color: var(--red2);
+        transition: all 300ms;
+}
+header a img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+header a p{
+    font: 700 0.8rem 'Montserrat';
+    color: var(--white);
+}
+
+
+
+section.home{
+    width: 100vw;
+    height: 100vh;
+    background: url(assets/img-home.png);
+    background-size: cover;
+    background-position: 65%;
+    padding: 20vh 10vw;
+    position: relative;
+}
+section.home h1{
+    font: 700 2.5rem 'Montserrat';
+    color: var(--white);
+    text-align: center;
+}
+section.home h3{
+    margin-top: 1rem;
+    text-align: center;
+    font: 400 1rem 'Montserrat';
+    color: var(--white);
+}
+section.home h3 span{
+    font-weight: 700;
+}
+section.home a {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-inline: auto;
+    border-radius: 15px;
+    background-color: var(--red);
+}
+    section.home a:hover{
+        box-shadow: 0px 0px 10px var(--red);
+        background-color: var(--red2);
+        transition: all 300ms;
+}
+section.home a img{
+    width: 2rem;
+    height: 2rem;
+}
+section.home a p{
+    font: 700 1rem 'Montserrat';
+    color: var(--white);
+}
+section.home div.numbers{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+section.home div.numbers div.wrapper{
+    width: 30%;
+}
+section.home div.numbers div.wrapper p.number{
+    font: 900 1.5rem 'Montserrat';
+    color: var(--red);
+    text-align: center;
+}
+section.home div.numbers div.wrapper p.description{
+    text-align: center;
+    font: 400 1rem 'Montserrat';
+    color: var(--white);
+}
+
+
+
+section.available{
+    padding: 20vh 10vw;
+}
+section.available h2{
+    font: 700 2rem 'Montserrat';
+    color: var(--red);
+    text-align: center;
+}
+section.available p.legend{
+    font: 400 1.3rem 'Montserrat';
+    color: var(--gray);
+    text-align: center;
+    margin-top: 1rem;
+}
+section.available div.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+section.available div.wrapper img{
+    height: 600px;
+    display: none;
+}
+section.available div.wrapper div.text{
+    width: 100%;
+}
+section.available div.wrapper div.text div.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid black;
+}
+section.available div.wrapper div.text div.header p{
+    width: 50%;
+    font: 400 1rem 'Montserrat';
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem;
+}
+section.available div.wrapper div.text div.header p.govBtn{
+    font-weight: 700;
+    background-color: var(--red);
+}
+section.available div.wrapper div.text ul.prefList{
+    display: none;
+}
+section.available div.wrapper div.text ul li{
+    font: 400 1rem 'Montserrat';
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+
+
+div.stripWrapper{
+    position: relative;
+}
+div.stripWrapper img.security{
+    height: 12vh;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+}
+div.strip{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    background-color: var(--red2);
+    height: 8vh;
+    gap: 1rem;
+    overflow: hidden;
+    border-block: 2px solid var(--red);
+    animation: slide 15s linear infinite;
+}
+div.strip img.security{
+    height: 1rem;
+    top: 0;
+}
+div.strip p{
+    width: 11rem;
+    text-align: center;
+    font: 700 0.8rem 'Montserrat';
+    color: var(--white);
+}
+div.strip img{
+    width: 0.6rem;
+    transform: rotate(180deg);
+}
+
+
+
+section.about{
+    padding: 10vh 10vw;
+    background-color: var(--white);
+}
+section.about div.row{
+    display: flex;
+    flex-direction: column;
+}
+section.about div.row div.text h3{
+    font: 700 2rem 'Montserrat';
+    color: var(--red);
+}
+section.about div.row div.text p.legend{
+    font: 400 1rem 'Montserrat';
+    color: black;
+    margin-top: 2rem;
+}
+
+section.about div.row div.text a{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 50px;
+    font: 600 0.8rem 'Montserrat';
+    background-color: var(--red);
+    color: var(--white);
+}
+    section.about div.row div.text a:hover{
+        background-color: var(--red2);
+        box-shadow: 0px 0px 10px var(--red);
+        transition: all 300ms;
+
+    }
+section.about div.row div.text a img{
+    width: 30px;
+    height: 30px;
+}
+section.about div.row img.image{
+    display: none;
+}
+
+
+
+section.comments{
+    padding: 10vh 10vw;
+    background-color: white;
+}
+section.comments h2{
+    font: 700 2rem "Montserrat";
+    color: var(--red);
+    text-align: center;
+}
+section.comments div.carousel div.carousel-content{
+    display: flex;
+    width: max-content;
+    gap: 10vw;
+    overflow: hidden;
+    margin-top: 5vh;
+    transition: transform 300ms;
+}
+section.comments div.carousel div.carousel-content div.card-comment{
+    width: 80vw;
+    background-color: #E4E4E4;
+    padding: 2rem;
+    border-radius: 15px;
+}
+section.comments div.carousel div.carousel-content div.card-comment img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 100px;
+    margin-inline: auto;
+}
+section.comments div.carousel div.carousel-content div.card-comment p.name{
+    margin-top: 1rem;
+    text-align: center;
+    font: 700 1rem "Montserrat";
+    color: black;
+}
+section.comments div.carousel div.carousel-content div.card-comment p.tag{
+    margin-top: 1rem;
+    text-align: center;
+    font: 500 0.8rem "Montserrat";
+    padding: 0.5rem;
+    color: var(--red);
+    border: 1px solid var(--red);
+    width: max-content;
+    margin-inline: auto;
+    border-radius: 50px;
+    background-color: #dac2c2;
+}
+section.comments div.carousel div.carousel-content div.card-comment p.comment{
+    font: 400 1rem "Montserrat";
+    color: black;
+    margin-top: 1rem;
+    text-align: center;
+}
+section.comments div.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 5vh;
+}
+section.comments div.buttons button{
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #E4E4E4;
+}
+    section.comments div.buttons button:hover{
+        background-color: var(--red);
+        transition: all 300ms;
+    }
+    section.comments div.buttons button:hover img{
+        filter: brightness(100);
+}
+section.comments div.buttons button img{
+    height: 2rem;
+}
+section.comments div.buttons button.prev-btn img{
+    transform: rotate(180deg);
+}
+
+
+
+section.steps{
+    padding: 10vh 10vw;
+}
+section.steps div.informations h3{
+    font: 700 2rem 'Montserrat';
+    text-align: center;
+    color: var(--red);
+}
+section.steps div.informations p.subtitle{
+    font: 400 1rem 'Montserrat';
+    text-align: center;
+    color: var(--red2);
+    margin-top: 1rem;
+}
+section.steps div.informations div.boxes{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+section.steps div.informations div.boxes div.box{
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: var(--red);
+
+}
+section.steps div.informations div.boxes div.box img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+    
+}
+section.steps div.informations div.boxes div.box p.title{
+    color: var(--white);
+    font: 700 1rem 'Montserrat';
+    margin-top: 1rem;
+    text-align: center;
+}
+section.steps div.informations div.boxes div.box p.description{
+    color: var(--white);
+    font: 400 0.9rem 'Montserrat';
+    margin-top: 1rem;
+    text-align: center;
+}
+section.steps div.informations a.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 50px;
+    font: 600 0.8rem 'Montserrat';
+    background-color: var(--red);
+    color: var(--white);
+}
+    section.steps div.informations a.button:hover{
+        background-color: var(--red2);
+        box-shadow: 0px 0px 10px var(--red);
+        transition: all 300ms;
+}
+section.steps div.informations a.button img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+section.FAQ{
+    padding: 10vh 10vw;
+    background-color: var(--white);
+}
+section.FAQ h2{
+    text-align: center;
+    font: 700 2rem 'Montserrat';
+    color: var(--red);
+}
+section.FAQ details{
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 2rem;
+    text-align: left;
+}
+section.FAQ details summary{
+    font: 700 1rem 'Montserrat';
+    color: var(--red2);
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+section.FAQ details p{
+    font: 400 1rem 'Montserrat';
+    color: black;
+    margin-top: 1rem;
+}
+section.FAQ details summary::marker{
+    content: "";
+    font-size: 0;
+    color: transparent;
+    opacity: 0;
+}
+section.FAQ details summary span::after{
+    content: '+';
+}
+section.FAQ details[open] summary span::after{
+    content: "-";
+}
+section.FAQ details summary::-webkit-details-marker {
+    display: none;
+}
+
+
+
+footer{
+    padding: 10vh 10vw;
+    background-color: var(--red);
+}
+footer div.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div.top img{
+    width: 70px;
+}
+footer div.top p.CNPJ{
+    font: 600 0.7rem 'Montserrat';
+    color: var(--white);
+}
+footer p.credits{
+    margin-top: 2rem;
+    color: var(--white);
+    font: 400 1rem 'Montserrat';
+    display: block;
+    margin-inline: auto;
+    text-align: center;
+}
+
+
+
+@keyframes slide{
+    0%{transform: translate(calc((12.6rem + 1rem) * (-1)));}
+    100%{transform: translate(calc((12.6rem + 1rem) * (-5)));}
+}

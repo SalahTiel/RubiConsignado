@@ -1,0 +1,148 @@
+@media screen and (min-width: 1280px){
+
+    header,
+    section.available,
+    section.about,
+    section.comments,
+    section.steps,
+    section.FAQ{
+        padding-inline: 15vw;
+    }
+
+
+
+    header{
+        top: 4vh;
+    }
+    header img.logo{
+        height: 3rem;
+    }
+    header a{
+        gap: 1rem;
+        padding: 1rem;
+    }
+    header a p{
+        font-size: 1rem;
+    }
+
+
+
+    
+    section.home div.text{
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 15vw;
+        transform: translate(0, -50%);
+    }
+    section.home div.text h1{
+        text-align: left;
+        font-size: 4rem;
+    }
+    section.home div.text h3{
+        text-align: left;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    section.home div.text a{
+        padding-inline: 6rem;
+        margin: 2rem 0 0;
+    }
+    section.home div.text a p{
+        font-size: 1.5rem;
+    }
+    section.home div.numbers{
+        margin-top: 2rem;
+    }
+    section.home div.numbers div.wrapper p.number{
+        font-size: 2rem;
+    }
+    section.home div.numbers div.wrapper p.description{
+        font-size: 1.2rem;
+    }
+
+
+
+    section.available div.wrapper img{
+        display: block;
+    }
+    section.available div.wrapper div.text{
+        width: 50%;
+    }
+
+
+
+    section.comments{
+        overflow: hidden;
+    }
+    section.comments h2{
+        font-size: 2.5rem;
+    }
+    section.comments div.carousel{
+        width: 100%;
+        overflow: hidden;
+    }
+    section.comments div.carousel div.carousel-content{
+        gap: 2vw;
+    }
+    section.comments div.carousel div.carousel-content div.card-comment{
+        width: 21.74vw;
+        height: 35vh
+    }
+
+
+
+    section.about div.row{
+        flex-direction: row;
+        gap: 8vw;
+    }
+    section.about div.row:nth-child(2){
+        margin-top: 12vh;
+    }
+    section.about div.row div.text{
+        margin-top: 2rem;
+    }
+    section.about div.row div.text p.legend{
+        font-size: 1.3rem;
+    }
+    section.about div.row div.text a{
+        width: max-content;
+        font-size: 1.2rem;
+    }
+    section.about div.row img.image{
+        display: block;
+        width: 45%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;   
+    }
+
+
+
+
+    section.steps div.informations div.boxes{
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+    }
+    section.steps div.informations div.boxes div.box{
+        width: 32%;
+    }
+    section.steps div.informations div.boxes div.box img{
+        height: 60%;
+    }
+    section.steps div.informations a.button{
+        width: max-content;
+        font-size: 1.5rem;
+        margin: 8vh auto;
+    }
+
+
+
+    footer div.top img{
+        width: 100px;
+    }
+    footer div.top p.CNPJ{
+        font-size: 1rem;
+    }
+}
