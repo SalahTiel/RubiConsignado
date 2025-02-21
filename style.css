@@ -272,7 +272,7 @@ section.about div.row img.image{
 section.comments{
     padding: 10vh 10vw;
     background-color: white;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 section.comments h2{
     font: 700 2rem "Montserrat";
@@ -280,13 +280,13 @@ section.comments h2{
     text-align: center;
 }
 section.comments div.carousel{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 section.comments div.carousel div.carousel-content{
     display: flex;
     width: max-content;
     gap: 10vw;
-    overflow: hidden;
+    overflow-x: hidden;
     margin-top: 5vh;
     transition: transform 300ms;
 }
