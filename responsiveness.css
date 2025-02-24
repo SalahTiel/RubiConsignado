@@ -45,7 +45,7 @@
         margin-top: 2rem;
     }
     section.home div.text a{
-        padding-inline: 6rem;
+        padding-inline: 1rem;
         margin: 2rem 0 0;
     }
     section.home div.text a p{
@@ -68,6 +68,9 @@
     }
     section.available div.wrapper div.text{
         width: 50%;
+    }
+    section.available div.wrapper div.text ul.prefList{
+        column-count: 2;
     }
 
 
@@ -102,7 +105,8 @@
     section.about div.row div.text{
         margin-top: 2rem;
     }
-    section.about div.row div.text p.legend{
+    section.about div.row div.text p.legend,
+    section.about div.row div.text ul li{
         font-size: 1.3rem;
     }
     section.about div.row div.text a{
@@ -116,7 +120,6 @@
         object-fit: cover;
         border-radius: 20px;   
     }
-
 
 
 

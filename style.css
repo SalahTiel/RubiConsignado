@@ -67,7 +67,7 @@ section.home{
     position: relative;
 }
 section.home h1{
-    font: 700 2.5rem 'Montserrat';
+    font: 700 2rem 'Montserrat';
     color: var(--white);
     text-align: center;
 }
@@ -85,7 +85,7 @@ section.home a {
     height: max-content;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 1rem;
     margin-top: 1rem;
     margin-inline: auto;
@@ -98,11 +98,11 @@ section.home a {
         transition: all 300ms;
 }
 section.home a img{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 section.home a p{
-    font: 700 1rem 'Montserrat';
+    font: 700 0.8rem 'Montserrat';
     color: var(--white);
 }
 section.home div.numbers{
@@ -148,6 +148,10 @@ section.available div.wrapper{
 section.available div.wrapper img{
     height: 600px;
     display: none;
+    animation: opacity2 500ms;
+}
+section.available div.wrapper img.map2{
+    display: none;
 }
 section.available div.wrapper div.text{
     width: 100%;
@@ -170,13 +174,17 @@ section.available div.wrapper div.text div.header p.govBtn{
     font-weight: 700;
     background-color: var(--red);
 }
+section.available div.wrapper div.text ul{
+    padding-top: 1rem;
+    animation: opacity 500ms linear;
+}
 section.available div.wrapper div.text ul.prefList{
     display: none;
 }
 section.available div.wrapper div.text ul li{
     font: 400 1rem 'Montserrat';
     margin-left: 2rem;
-    margin-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -239,7 +247,6 @@ section.about div.row div.text p.legend{
     color: black;
     margin-top: 2rem;
 }
-
 section.about div.row div.text a{
     display: flex;
     gap: 0.5rem;
@@ -248,7 +255,7 @@ section.about div.row div.text a{
     padding: 1rem;
     margin-top: 2rem;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 15px;
     font: 600 0.8rem 'Montserrat';
     background-color: var(--red);
     color: var(--white);
@@ -266,7 +273,15 @@ section.about div.row div.text a img{
 section.about div.row img.image{
     display: none;
 }
-
+section.about div.row div.text ul li{
+    font: 400 1rem 'Montserrat';
+    color: black;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+section.about div.row div.text ul li span{
+    font-weight: 700;
+}
 
 
 section.comments{
@@ -408,7 +423,7 @@ section.steps div.informations a.button{
     padding: 1rem;
     margin-top: 2rem;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 15px;
     font: 600 0.8rem 'Montserrat';
     background-color: var(--red);
     color: var(--white);
@@ -497,7 +512,39 @@ footer p.credits{
 
 
 
+section.home.animated-item,
+section.available.animated-item,
+section.about.animated-item,
+section.comments.animated-item,
+section.steps.animated-item,
+section.FAQ.animated-item{
+    opacity: 0;
+    transform: translate(-50px);
+}
+section.home.animated-item.visible,
+section.available.animated-item.visible,
+section.about.animated-item.visible,
+section.comments.animated-item.visible,
+section.steps.animated-item.visible,
+section.FAQ.animated-item.visible{
+    opacity: 1;
+    transform: translate(0);
+    transition: all 1s;
+}
+
+
+
+
 @keyframes slide{
     0%{transform: translate(calc((12.6rem + 1rem) * (-1)));}
     100%{transform: translate(calc((12.6rem + 1rem) * (-5)));}
 }
+@keyframes opacity{
+    0%{opacity: 0; transform: translate(70px);}
+    100%{opacity: 1; transform: translate(0);}    
+}
+@keyframes opacity2{
+    0%{opacity: 0; transform: translate(-70px);}
+    100%{opacity: 1; transform: translate(0);}    
+}
+
