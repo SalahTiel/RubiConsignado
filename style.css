@@ -146,6 +146,7 @@ section.available div.wrapper{
     margin-top: 2rem;
 }
 section.available div.wrapper img{
+    display: none;
     height: 600px;
     display: none;
     animation: opacity2 500ms;
@@ -153,6 +154,7 @@ section.available div.wrapper img{
 section.available div.wrapper img.map2{
     display: none;
 }
+   
 section.available div.wrapper div.text{
     width: 100%;
 }

@@ -7,28 +7,35 @@ function toggleList (list) {
     const map2 = document.querySelector('img.map2')
 
 
+
+
     if(list === 'gov'){
         govList.style.display = 'block'
         govBtn.style.backgroundColor = 'var(--red)'
         govBtn.style.fontWeight = '700'
-        map1.style.display = "block"
         
         prefList.style.display = 'none'
         prefBtn.style.backgroundColor = 'transparent'
         prefBtn.style.fontWeight = '400'
-        map2.style.display = "none"
-
+        
+        if(screen.width >= 1280){
+          map1.style.display = "block"
+          map2.style.display = "none"
+        }
 
     }else{
         govList.style.display = 'none'
         govBtn.style.backgroundColor = 'transparent'
         govBtn.style.fontWeight = '400'
-        map1.style.display = "none"
 
         prefList.style.display = 'block'
         prefBtn.style.backgroundColor = 'var(--red)'
         prefBtn.style.fontWeight = '700'
-        map2.style.display = "block"
+
+        if(screen.width >= 1280){
+          map1.style.display = "none"
+          map2.style.display = "block"
+        }
     }
 
 }
