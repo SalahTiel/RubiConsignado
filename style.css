@@ -71,14 +71,20 @@ section.home h1{
     color: var(--white);
     text-align: center;
 }
-section.home h3{
+section.home ul{
     margin-top: 1rem;
-    text-align: center;
-    font: 400 1rem 'Montserrat';
-    color: var(--white);
 }
-section.home h3 span{
-    font-weight: 700;
+section.home ul li{
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+}
+section.home ul li img{
+    width: 1rem;
+}
+section.home ul li p{
+    font: 500 1rem 'Montserrat';
+    color: var(--white);
 }
 section.home a {
     width: max-content;
@@ -309,6 +315,7 @@ section.comments div.carousel div.carousel-content{
 }
 section.comments div.carousel div.carousel-content div.card-comment{
     width: 80vw;
+    height: min-content;
     background-color: #E4E4E4;
     padding: 2rem;
     border-radius: 15px;
@@ -375,53 +382,45 @@ section.comments div.buttons button.prev-btn img{
 section.steps{
     padding: 10vh 10vw;
 }
-section.steps div.informations h3{
-    font: 700 2rem 'Montserrat';
-    text-align: center;
+section.steps h2{
+    font: 700 2rem "Montserrat";
     color: var(--red);
+    text-align: center;
 }
-section.steps div.informations p.subtitle{
+section.steps div.carousel2{
+    overflow-x: hidden;
+}
+section.steps div.carousel2 div.carousel-content2{
+    display: flex;
+    width: max-content;
+    gap: 10vw;
+    overflow-x: hidden;
+    margin-top: 5vh;
+    transition: transform 300ms;
+}
+section.steps div.carousel2 div.carousel-content2 div.product{
+    width: 80vw;
+    height: min-content;
+    background-color: var(--red);
+    padding: 2rem;
+    border-radius: 15px;
+}
+section.steps div.carousel2 div.carousel-content2 div.product p.title{
+    font: 700 1.2rem 'Montserrat';
+    text-align: center;
+    color: var(--white);
+}
+section.steps div.carousel2 div.carousel-content2 div.product p.description{
     font: 400 1rem 'Montserrat';
     text-align: center;
-    color: var(--red2);
-    margin-top: 1rem;
-}
-section.steps div.informations div.boxes{
-    display: flex;
-    margin-top: 2rem;
-    flex-direction: column;
-    gap: 2rem;
-}
-section.steps div.informations div.boxes div.box{
-    padding: 1rem;
-    border-radius: 20px;
-    background-color: var(--red);
-
-}
-section.steps div.informations div.boxes div.box img{
-    width: 100%;
-    height: 50%;
-    border-radius: 10px;
-    object-fit: cover;
-    
-}
-section.steps div.informations div.boxes div.box p.title{
     color: var(--white);
-    font: 700 1rem 'Montserrat';
     margin-top: 1rem;
-    text-align: center;
 }
-section.steps div.informations div.boxes div.box p.description{
-    color: var(--white);
-    font: 400 0.9rem 'Montserrat';
-    margin-top: 1rem;
-    text-align: center;
-}
-section.steps div.informations a.button{
+section.steps a.button{
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     margin-top: 2rem;
     text-align: center;
@@ -430,14 +429,39 @@ section.steps div.informations a.button{
     background-color: var(--red);
     color: var(--white);
 }
-    section.steps div.informations a.button:hover{
+    section.steps a.button:hover{
         background-color: var(--red2);
         box-shadow: 0px 0px 10px var(--red);
         transition: all 300ms;
-}
-section.steps div.informations a.button img{
+    }
+section.steps a.button img{
     width: 30px;
     height: 30px;
+}
+section.steps div.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 5vh;
+}
+section.steps div.buttons button{
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #E4E4E4;
+}
+section.steps div.buttons button:hover{
+    background-color: var(--red);
+    transition: all 300ms;
+}
+section.steps div.buttons button:hover img{
+    filter: brightness(100);
+}
+section.steps div.buttons button img{
+height: 2rem;
+}
+section.steps div.buttons button.prev-btn2 img{
+transform: rotate(180deg);
 }
 
 
@@ -469,6 +493,9 @@ section.FAQ details p{
     color: black;
     margin-top: 1rem;
 }
+section.FAQ details p span.bold{
+    font-weight: 700;
+}
 section.FAQ details summary::marker{
     content: "";
     font-size: 0;
@@ -499,9 +526,16 @@ footer div.top{
 footer div.top img{
     width: 70px;
 }
-footer div.top p.CNPJ{
+footer div.top div.infos p.CNPJ{
     font: 600 0.7rem 'Montserrat';
     color: var(--white);
+}
+footer div.top div.infos p.tel{
+    margin-top: 1rem;
+    font: 600 0.7rem 'Montserrat';
+    color: var(--white);
+    width: 100%;
+    text-align: right;
 }
 footer p.credits{
     margin-top: 2rem;

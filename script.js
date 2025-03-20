@@ -71,6 +71,35 @@ nextBtn.addEventListener('click', () => {
 
 
 
+const carouselContent2 = document.querySelector('.carousel-content2');
+const card2 = document.querySelectorAll('.product');
+const prevBtn2 = document.querySelector('.prev-btn2');
+const nextBtn2 = document.querySelector('.next-btn2');
+
+let currentIndex2 = 0;
+
+function updateCarousel2() {
+  if(screen.width >= 1280){
+    const offset2 = -currentIndex2 * 23.74;
+    carouselContent2.style.transform = `translateX(${offset2}vw)`;
+  }else{
+    const offset2 = -currentIndex2 * 90;
+    carouselContent2.style.transform = `translateX(${offset2}vw)`;
+  }
+}
+
+prevBtn2.addEventListener('click', () => {
+  currentIndex2 = (currentIndex2 === 0) ? card2.length - 1 : currentIndex2 - 1;
+  updateCarousel2();
+});
+
+nextBtn2.addEventListener('click', () => {
+  currentIndex2 = (currentIndex2 === card2.length - 1) ? 0 : currentIndex2 + 1;
+  updateCarousel2();
+});
+
+
+
 function animateNumbers() {
   const counters = document.querySelectorAll(".counter");
 

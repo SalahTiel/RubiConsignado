@@ -39,10 +39,8 @@
         text-align: left;
         font-size: 3rem;
     }
-    section.home div.text h3{
-        text-align: left;
-        font-size: 1.5rem;
-        margin-top: 2rem;
+    section.home ul li{
+        justify-content: left;
     }
     section.home div.text a{
         padding-inline: 1rem;
@@ -90,7 +88,10 @@
     }
     section.comments div.carousel div.carousel-content div.card-comment{
         width: 21.74vw;
-        height: 35vh
+        height: 22rem;
+    }
+    section.comments div.buttons{
+        display: none;
     }
 
 
@@ -123,29 +124,28 @@
 
 
 
-    section.steps div.informations div.boxes{
-        flex-direction: row;
-        gap: 0;
-        justify-content: space-between;
+    section.steps div.carousel2 div.carousel-content2{
+        gap: 2vw;
     }
-    section.steps div.informations div.boxes div.box{
-        width: 32%;
+    section.steps div.carousel2 div.carousel-content2 div.product{
+        width: 21.74vw;
+        height: auto;
     }
-    section.steps div.informations div.boxes div.box img{
-        height: 60%;
+    section.steps a.button{
+        margin-inline: auto;
+        width: 50%;
+        font-weight: 700;
+        font-size: 1.2rem;
     }
-    section.steps div.informations a.button{
-        width: max-content;
-        font-size: 1.5rem;
-        margin: 8vh auto;
-    }
-
 
 
     footer div.top img{
         width: 100px;
     }
-    footer div.top p.CNPJ{
+    footer div.top div.infos p.CNPJ{
+        font-size: 1rem;
+    }
+    footer div.top div.infos p.tel{
         font-size: 1rem;
     }
 }
