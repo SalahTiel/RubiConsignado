@@ -60,15 +60,17 @@
     }
 
 
-
-    section.available div.wrapper img.map1{
-        display: block;
+    section.available div.wrapper{
+        flex-direction: row;
+        justify-content: center;
+        gap: 13vw;
+        align-items: center;
     }
-    section.available div.wrapper div.text{
-        width: 50%;
+    section.available div.wrapper img{
+        width: 20vw;
     }
-    section.available div.wrapper div.text ul.prefList{
-        column-count: 2;
+    section.available div.wrapper div.text a{
+        padding-inline: 4rem;
     }
 
 

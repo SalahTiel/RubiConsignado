@@ -133,68 +133,45 @@ section.home div.numbers div.wrapper p.description{
 
 
 section.available{
-    padding: 20vh 10vw;
+    padding: 5vh 10vw;
+    background-color: var(--red2);
 }
 section.available h2{
     font: 700 2rem 'Montserrat';
-    color: var(--red);
+    color: var(--white);
     text-align: center;
 }
 section.available p.legend{
     font: 400 1.3rem 'Montserrat';
-    color: var(--gray);
+    color: var(--white);
     text-align: center;
     margin-top: 1rem;
 }
 section.available div.wrapper{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-top: 2rem;
 }
 section.available div.wrapper img{
-    display: none;
-    height: 600px;
-    display: none;
-    animation: opacity2 500ms;
-}
-section.available div.wrapper img.map2{
-    display: none;
-}
-   
-section.available div.wrapper div.text{
     width: 100%;
-}
-section.available div.wrapper div.text div.header{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 2rem;
-    border-bottom: 1px solid black;
-}
-section.available div.wrapper div.text div.header p{
-    width: 50%;
-    font: 400 1rem 'Montserrat';
-    text-align: center;
-    border-radius: 10px 10px 0 0;
+    animation: opacity2 500ms;
+}  
+section.available div.wrapper div.text a{
+    display: block;
+    font: 700 1rem 'Montserrat';
+    background-color: var(--white);
     padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--red);
+    margin-top: 1rem;
 }
-section.available div.wrapper div.text div.header p.govBtn{
-    font-weight: 700;
-    background-color: var(--red);
+    section.available div.wrapper div.text a:hover{
+        box-shadow: 0px 0px 10px var(--red);
+        background-color: var(--red);
+        color: var(--white);
+        transition: all 300ms;
 }
-section.available div.wrapper div.text ul{
-    padding-top: 1rem;
-    animation: opacity 500ms linear;
-}
-section.available div.wrapper div.text ul.prefList{
-    display: none;
-}
-section.available div.wrapper div.text ul li{
-    font: 400 1rem 'Montserrat';
-    margin-left: 2rem;
-    padding-bottom: 1rem;
-}
-
 
 
 div.stripWrapper{
@@ -284,7 +261,7 @@ section.about div.row img.image{
 section.about div.row div.text ul li{
     font: 400 1rem 'Montserrat';
     color: black;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     margin-left: 2rem;
 }
 section.about div.row div.text ul li span{
